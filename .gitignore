@@ -1,0 +1,63 @@
+# ---------- OS / Editor ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# ---------- PHP / Composer ----------
+/vendor/
+.phpunit.result.cache
+.phpunit.cache/
+.phpstan.cache/
+.psalm/
+.psalm-cache/
+.php-cs-fixer.cache
+.deptrac.cache
+
+# ---------- Node / Build tooling ----------
+node_modules/
+dist/
+/build/
+coverage/
+.eslintcache
+.prettier-cache
+
+# ---------- Compiled asset source maps ----------
+public/assets/css/*.map
+public/assets/js/*.map
+
+# ---------- Env / Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ---------- Runtime / Temp ----------
+/bootstrap/cache/*.php
+/storage/
+/var/
+tmp/
+.cache/
+*.log
+
+# ---------- Database ----------
+/database/*.sqlite
+
+# ---------- Public uploads (CMS-generated) ----------
+/public/uploads/
+/public/cms-assets/
+
+# ---------- Qodana ----------
+.qodana/
+
+# ---------- Claude Code ----------
+CLAUDE.md
+.claude/
+docs/internal/

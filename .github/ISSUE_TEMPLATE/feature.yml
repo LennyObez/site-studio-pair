@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a new feature or improvement for the website
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the feature or improvement.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the website does this relate to?
+      options:
+        - Home page
+        - Features page
+        - Pricing page
+        - Documentation
+        - Support / FAQ
+        - Legal (privacy, terms)
+        - SEO
+        - Internationalization
+        - Accessibility
+        - Styling / Design
+        - Navigation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature needed? What problem does it solve?
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Any other context, mockups, or references.
+    validations:
+      required: false
